@@ -292,10 +292,7 @@ app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://abhirambca2021:abhi@cluster0.zjvaigp.mongodb.net/Root?retryWrites=true&w=majority&appName=Cluster0', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect('mongodb+srv://abhirambca2021:abhi@cluster0.zjvaigp.mongodb.net/Root?retryWrites=true&w=majority&appName=Cluster0');
 
 // Multer setup for file storage
 const storage = multer.diskStorage({
